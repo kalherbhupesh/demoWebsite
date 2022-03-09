@@ -1,0 +1,66 @@
+baseURL = ""
+languageCode = "en-us"
+title = "AlphaWave Technology"
+theme = "ananke"
+
+resourceDir = "../resources"
+
+DefaultContentLanguage = "en"
+SectionPagesMenu = "main"
+Paginate = 3 # this is set low for demonstrating with dummy content. Set to a higher number
+googleAnalytics = ""
+enableRobotsTXT = true
+
+# TODO:: to add language support for later
+#[languages]
+#  [languages.en]
+#    title = "Ananke"
+#    weight = 1
+#    contentDir = "content/en"
+#  [languages.fr]
+#    title = "Ananke Fr"
+#    weight = 2
+#    contentDir = "content/fr"
+
+[menu]
+[[menu.main]]
+  identifier = 'products'
+  name = 'SOLUTIONS'
+  title = 'Our Products'
+  url = '/products/'
+  weight = 10
+[[menu.main]]
+  identifier = 'contact_us'
+  name = 'CONTACT US'
+  title = 'Contact Us'
+  url = '/contact_us/'
+  weight = 110
+[[menu.main]]
+  identifier = 'about_us'
+  name = 'ABOUT US'
+  title = 'About Us'
+  url = '/about_us/'
+  weight = 11
+
+[sitemap]
+  changefreq = "monthly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
+[params]
+  text_color = ""
+  author = ""
+  favicon = ""
+  featured_image = "/img/cover.jpg"
+  
+  #TODO:: to make better svg logo
+  site_logo = "img/logo.svg"
+  description = "The last theme you'll ever need. Maybe."
+  # choose a background color from any on this page: http://tachyons.io/docs/themes/skins/ and preface it with "bg-"
+  background_color_class = "bg-blue"
+  recent_posts_number = 3
+
+#TODO :: to add social links 
+#[[params.ananke_socials]]
+#name = "twitter"
+#url = "https://twitter.com/GoHugoIO"
